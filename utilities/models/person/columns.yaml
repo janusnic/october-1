@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    fullname:
+        label: NAME
+        searchable: true
+
+    bio:
+        label: BIO
+
+    roles:
+        label: ROLE 
+        relation: roles
+        select: rolename

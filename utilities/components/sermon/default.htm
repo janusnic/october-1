@@ -1,0 +1,19 @@
+<script>
+/* <![CDATA[ */
+  jQuery(document).ready(function($) {
+    $('audio').mediaelementplayer({
+      features: ['playpause','progress','tracks','volume'],
+    });
+  });
+/* ]]> */
+</script>
+{% if (__SELF__.sermon.url) %}
+  <div class="centerdiv" id="audio-container">
+    <a title="View series: '{{ __SELF__.sermon.series.title }}'" href="/october/series/{{ __SELF__.sermon.series_id }}"><img src="{{ __SELF__.sermon.series.thumbnail }}"></a>
+    <audio controls="" preload="none" width="250px" height="30px" src="{{ __SELF__.sermon.url }}"></audio>
+    <i>{{ __SELF__.sermon.readings }}</i><br>
+    Preacher: <a href="/october/people/{{ __SELF__.sermon.person.id }}">{{ __SELF__.sermon.person.fullname }}</a>
+  </div>
+{% else %}
+Sorry, that sermon does not exist
+{% endif %}

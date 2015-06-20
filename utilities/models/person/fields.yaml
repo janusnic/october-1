@@ -1,0 +1,21 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    fullname:
+        label: NAME
+
+    bio:
+        label: BIO
+        type: textarea
+
+    roles:
+        label: ROLE 
+        type: relation
+        nameFrom: rolename
+

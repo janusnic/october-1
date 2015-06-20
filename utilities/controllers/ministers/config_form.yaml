@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Minister
+
+# Model Form Field configuration
+form: $/michaelbishop/website/models/minister/fields.yaml
+
+# Model Class name
+modelClass: MichaelBishop\Website\Models\Minister
+
+# Default redirect location
+defaultRedirect: michaelbishop/website/ministers
+
+# Create page
+create:
+    title: Create Minister
+    redirect: michaelbishop/website/ministers/update/:id
+    redirectClose: michaelbishop/website/ministers
+
+# Update page
+update:
+    title: Edit Minister
+    redirect: michaelbishop/website/ministers
+    redirectClose: michaelbishop/website/ministers
+
+# Preview page
+preview:
+    title: Preview Minister

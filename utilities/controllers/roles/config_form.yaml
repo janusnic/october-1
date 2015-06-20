@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Role
+
+# Model Form Field configuration
+form: $/michaelbishop/website/models/role/fields.yaml
+
+# Model Class name
+modelClass: MichaelBishop\Website\Models\Role
+
+# Default redirect location
+defaultRedirect: michaelbishop/website/roles
+
+# Create page
+create:
+    title: Create Role
+    redirect: michaelbishop/website/roles/update/:id
+    redirectClose: michaelbishop/website/roles
+
+# Update page
+update:
+    title: Edit Role
+    redirect: michaelbishop/website/roles
+    redirectClose: michaelbishop/website/roles
+
+# Preview page
+preview:
+    title: Preview Role

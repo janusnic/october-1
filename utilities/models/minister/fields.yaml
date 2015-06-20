@@ -1,0 +1,26 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    PFNUM:
+        label: PFNUM
+        searchable: true
+
+    SURNAME:
+        label: SURNAME
+
+    NAME:
+        label: FIRST NAME
+
+    TITLE:
+        label: TITLE
+
+    DEGREES:
+        label: DEGREES
+
+    DISTRICT:
+        label: DISTRICT
+
+    CIRCUIT:
+        label: CIRCUIT

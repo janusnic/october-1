@@ -1,0 +1,8 @@
+1.0.1: First version of Website
+1.0.2:
+    - Create and seed Sermons, People, Roles and Series tables
+    - create_sermons_table.php
+    - create_people_table.php
+    - create_roles_table.php
+    - create_series_table.php
+    - seed_all_tables.php

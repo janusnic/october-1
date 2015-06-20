@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Person
+
+# Model Form Field configuration
+form: $/michaelbishop/website/models/person/fields.yaml
+
+# Model Class name
+modelClass: MichaelBishop\Website\Models\Person
+
+# Default redirect location
+defaultRedirect: michaelbishop/website/people
+
+# Create page
+create:
+    title: Create Person
+    redirect: michaelbishop/website/people/update/:id
+    redirectClose: michaelbishop/website/people
+
+# Update page
+update:
+    title: Edit Person
+    redirect: michaelbishop/website/people
+    redirectClose: michaelbishop/website/people
+
+# Preview page
+preview:
+    title: Preview Person

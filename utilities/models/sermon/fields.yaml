@@ -1,0 +1,33 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    title:
+        label: TITLE
+        type: text
+
+    series:
+        label: SERIES 
+        type: relation
+        nameFrom: title
+
+    person:
+        label: PREACHER
+        type: relation
+        nameFrom: fullname
+
+    sermondate:
+        label: DATE
+        type: datepicker
+        mode: date
+
+    readings:
+        label: READINGS
+
+    url:
+        label: URL

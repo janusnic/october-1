@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Series
+
+# Model Form Field configuration
+form: $/michaelbishop/website/models/series/fields.yaml
+
+# Model Class name
+modelClass: MichaelBishop\Website\Models\Series
+
+# Default redirect location
+defaultRedirect: michaelbishop/website/series
+
+# Create page
+create:
+    title: Create Series
+    redirect: michaelbishop/website/series/update/:id
+    redirectClose: michaelbishop/website/series
+
+# Update page
+update:
+    title: Edit Series
+    redirect: michaelbishop/website/series
+    redirectClose: michaelbishop/website/series
+
+# Preview page
+preview:
+    title: Preview Series

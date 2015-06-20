@@ -1,0 +1,56 @@
+<script>
+/* <![CDATA[ */
+  jQuery(document).ready(function($) {
+    $('audio').mediaelementplayer({
+        playlist: true, audioHeight: 30, playlistposition: 'bottom',
+        features: ['playlistfeature', 'playpause', 'current', 'progress', 'volume'],
+            keyActions: []
+    });
+  });
+/* ]]> */
+</script>
+<div id="audio-container">
+  <div class="row">
+    <div class="col-md-12">
+    <h3>{{__SELF__.series.title}}</h3>
+    </div>
+    <div class="col-md-4 col-xs-12">
+      {{ __SELF__.series.description }}
+    </div>    
+    <div class="col-md-4 col-sm-6">
+      <img src="{{ __SELF__.series.thumbnail }}">
+    </div>    
+    <div class="col-sm-4 col-sm-6 playlistdiv">
+      <audio id="mejs" type="audio/mp3" controls="controls" width="250px" height="30px">
+        {% for sermon in __SELF__.sermons %}
+          <Source src="{{ sermon.url }}" title="{{ sermon.title }} ({{ sermon.person.fullname }})"></Source>
+          <br>
+        {% endfor %}
+      </audio>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Sermon</th>
+          <th>Preacher</th>
+          <th>Readings</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for sermon in __SELF__.sermons %}
+        <tr>
+          <td>{{ sermon.sermondate }} </td>
+          <td><a href="/october/sermons/{{sermon.id}}">{{ sermon.title }}</a></td>
+          <td><a href="/october/people/{{sermon.person.id}}">{{ sermon.person.fullname }}</a></td>
+          <td>{{ sermon.readings }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

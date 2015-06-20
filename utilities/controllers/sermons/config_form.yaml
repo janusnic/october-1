@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Sermon
+
+# Model Form Field configuration
+form: $/michaelbishop/website/models/sermon/fields.yaml
+
+# Model Class name
+modelClass: MichaelBishop\Website\Models\Sermon
+
+# Default redirect location
+defaultRedirect: michaelbishop/website/sermons
+
+# Create page
+create:
+    title: Create Sermon
+    redirect: michaelbishop/website/sermons/update/:id
+    redirectClose: michaelbishop/website/sermons
+
+# Update page
+update:
+    title: Edit Sermon
+    redirect: michaelbishop/website/sermons
+    redirectClose: michaelbishop/website/sermons
+
+# Preview page
+preview:
+    title: Preview Sermon

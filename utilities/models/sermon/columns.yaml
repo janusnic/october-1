@@ -1,0 +1,25 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: false
+
+    title:
+        label: TITLE 
+        searchable: true
+
+    person:
+        label: PREACHER
+        relation: person
+        select: fullname
+
+    series:
+        label: SERIES
+        relation: series
+        select: title
+
+    sermondate:
+        label: DATE
